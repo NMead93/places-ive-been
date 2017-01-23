@@ -15,18 +15,45 @@
         <h1>Places Youve Been!</h1>
       </div>
       <form id="places">
-        <div class="form-group">
-          <label for="location">Enter where you've been recently:</label>
-          <input id="place" type="text" class="form-control" name="location">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="location">Enter where you've been recently:</label>
+              <input id="place" type="text" class="form-control" name="location">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="landmarks">Enter major landmarks:</label>
+              <input id="landmark" type="text" class="form-control" name="landmark">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="timeOfYear">What time of year did you go:</label>
+              <input id="time" type="text" class="form-control" name="time">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="food">What local cuisine did you  like best:</label>
+              <input id="food" type="text" class="form-control" name="food">
+            </div>
+          </div>
         </div>
         <button type="submit" class="btn btn-primary" name="button">Submit</button>
       </form>
       <div class="output">
-        <h3></h3>
+        <h3 id="header"></h3>
         <ul id="output">
 
         </ul>
-
       </div>
     </div>
   </body>
