@@ -19,12 +19,11 @@ $(document).ready(function(){
     event.preventDefault();
     var complete = new Places($('#place').val(), $('#landmark').val(), $('#time').val(), $('#food').val());
 
+    $('#output').append("<li id='title'>" + complete.place + '</li>' )
     $('#output').append('<li>' + complete.place + '</li>' )
     $('#output').append('<li>' + complete.landmarks + '</li>' )
     $('#output').append('<li>' + complete.time + '</li>' )
     $('#output').append('<li>' + complete.food + '</li>' )
-    $('#header').text(complete.place);
-
   });
 
 });
